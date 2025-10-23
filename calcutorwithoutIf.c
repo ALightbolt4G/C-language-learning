@@ -19,9 +19,10 @@ int main()
     (choice == 2) && (result = num1 - num2);
     (choice == 3) && (result = num1 * num2);
     (choice == 4 && num2 == 0) && (printf("Error:can't divine by zero\n")) && (choice = 0);
-    (choice == 4) && (result = num1 / num2);
+    (choice == 4 && num2 != 0) && (result = num1 / num2);
     (choice < 1 || choice > maxOperations) && (printf("invalid choice\n\n"));
     (choice >= 1 && choice <= maxOperations) && (result += result * taxRate) && (printf("the result is: %.2f\n", result));
 
     return 0;
 }
+
