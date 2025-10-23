@@ -8,6 +8,7 @@ int main()
     printf("choose your choice:\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n");
 
     float num1, num2, result;
+    result = 0.0;
     int choice;
     printf("\nplease input your first number: \n");
     scanf("%f", &num1);
@@ -26,6 +27,7 @@ int main()
 
     return 0;
 }
+
 
 
 
